@@ -1,9 +1,6 @@
-on: 
-  push:
-    branches:
-      - master
-
 name: "Trigger: Push action"
+run-time: ${{ github.actor }} is running ShellCheck
+on: [push]
 permission: {}
 
 jobs:
