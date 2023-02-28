@@ -1,5 +1,5 @@
 name: Trigger-Push-action
-run-time: ${{ github.actor }} is running ShellCheck
+run-name: ${{ github.actor }} is running ShellCheck
 on: [push]
 
 jobs:
