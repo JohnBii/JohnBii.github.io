@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 
-echo "Now is $(date)"
+echo "Now is $(date"
 
 find . -mtime -1
 
