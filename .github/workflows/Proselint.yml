@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: apt-get-repository universe
+      - run: add-get-repository universe
       - run: apt install python3-proselint
       - run: apt install xargs
       - run: find "*.md" | xargs proselint
