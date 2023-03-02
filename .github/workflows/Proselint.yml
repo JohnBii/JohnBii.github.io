@@ -1,0 +1,14 @@
+name: Run-Proselint
+run-name: ${{ github.actor }} is running Proselint 
+on: [push]
+
+jobs:
+  proselint:
+    name: Proselint 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: apt-get-repository universe
+      - run: apt install python3-proselint
+      - run: apt install xargs
+      - run: find "*.md" | xargs proselint
